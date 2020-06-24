@@ -1,0 +1,28 @@
+dn: ou=Users,DC=cib-cross-services,DC=isban,DC=pt
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: uid=sigom,ou=Users,DC=cib-cross-services,DC=isban,DC=pt
+cn: sigom
+description: This is the default sigom user
+employeenumber: 0
+givenName: sigom
+homephone: +1 225 216 5900
+initials: SIG
+l: Portugal
+mail: sigom@cib-cross-services.isban.pt
+mobile: +1 010 154 3228
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+pager: +1 779 041 6341
+postalAddress: Aaccf Amar$01251 Chestnut Street$Panama City, DE  50369
+postalCode: 50369
+sn: sigom
+st: DE
+street: 01251 Chestnut Street
+telephoneNumber: +1 685 622 6202
+uid: sigom
+userPassword: QbmD4sTYMdprdhHshkeF
