@@ -2,13 +2,13 @@ version: "3"
 
 services:
 
- jenkins-master:
-  image: fapinheiro/jenkins-master:1.0.0
-  ports:
-   - 8080:8080
-   - 49187:49187
-  volumes:
-   - C:/Applics/Jenkins/JenkinsMaster:/opt/jenkins/JenkinsMaster
+#  jenkins-master:
+#   image: fapinheiro/jenkins-master:1.0.0
+#   ports:
+#    - 8080:8080
+#    - 49187:49187
+#   volumes:
+#    - C:/Applics/Jenkins/JenkinsMaster:/opt/jenkins/JenkinsMaster
 
  open-ldap:
    image: fapinheiro/opendj-ldap:1.0.0
