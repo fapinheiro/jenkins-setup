@@ -11,7 +11,7 @@ services:
 #    - C:/Applics/Jenkins/JenkinsMaster:/opt/jenkins/JenkinsMaster
 
  open-ldap:
-   image: fapinheiro/opendj-ldap:1.0.0
+   image: fapinheiro/opendj-ldap:1.0.1
    ports:
     - 1389:1389
     - 1636:1636

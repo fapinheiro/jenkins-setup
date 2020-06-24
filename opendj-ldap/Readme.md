@@ -5,7 +5,7 @@ https://www.techrepublic.com/article/how-to-populate-an-ldap-server-with-users-a
 https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Administration-Directory-Data
 
 # Build
-`Before building check The End of Line Sequence of the file in all *.sh files. It must be LF, not CRLF.`
+`Before building check The End of Line Sequence of the file in all *.sh and *.ldif files. It must be LF, not CRLF.`
 
 docker image build -t fapinheiro/opendj-ldap:1.0.0 .
 
