@@ -12,5 +12,5 @@ CD %WORKSPACE%\jenkins-slave
 CALL JenkinsService.bat
 
 REM START LDAP
-CD %WORKSPACE%
-docker-compose up -d
+REM CD %WORKSPACE%
+REM docker-compose up -d
