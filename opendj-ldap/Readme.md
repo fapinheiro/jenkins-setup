@@ -18,6 +18,9 @@ docker container run --rm -h cib-cross-services.isban.pt -e BASE_DN="DC=cib-cros
 
 docker container run --rm -h cib-cross-services.isban.pt -p 1389:1389 -p 1636:1636 -p 4444:4444 --name cib-cross-services-ldap fapinheiro/opendj-ldap:1.0.0
 
+# Push 
+docker image push fapinheiro/opendj-ldap:1.0.1
+
 # Debug
 docker container stop c203fcfa2d45
 
