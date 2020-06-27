@@ -3,6 +3,7 @@ https://hub.docker.com/r/openidentityplatform/opendj/
 http://www.ldapadmin.org/docs/introduction.html
 https://www.techrepublic.com/article/how-to-populate-an-ldap-server-with-users-and-groups-via-phpldapadmin/
 https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Administration-Directory-Data
+https://medium.com/ci-t/9-steps-to-ssh-into-an-aws-fargate-managed-container-46c1d5f834e2
 
 # Build
 `Before building check The End of Line Sequence of the file in all *.sh and *.ldif files. It must be LF, not CRLF.`

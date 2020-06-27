@@ -14,5 +14,5 @@ WORKDIR /opt
 
 COPY /data /opt/opendj/bootstrap/data/
 
-# ENTRYPOINT [ "/bin/bash" ]
+COPY /scripts /opt/opendj/
 
