@@ -66,6 +66,6 @@ fi
 echo "Try to upgrade OpenDJ"
 sh ./upgrade -n
 
-echo "Starting OpenDJ"
-sh ./bin/start-ds --nodetach
+echo "Starting OpenDJ..."
+sh ./bin/start-ds
 exec ./setup-ldap.sh
