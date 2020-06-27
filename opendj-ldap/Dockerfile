@@ -13,3 +13,6 @@ ENV ROOT_PASSWORD="Aws022020."
 WORKDIR /opt
 
 COPY /data /opt/opendj/bootstrap/data/
+
+# ENTRYPOINT [ "/bin/bash" ]
+
