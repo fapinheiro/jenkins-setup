@@ -23,15 +23,17 @@ if [ ! -d ./data/config ] ; then
 
   BOOTSTRAP=${BOOTSTRAP:-/opt/opendj/bootstrap/setup.sh}
 
+  export ROOT_USER_DN=${ROOT_USER_DN:-"cn=Root"}
+  echo "User Root is ${ROOT_USER_DN}"
+
   export BASE_DN=${BASE_DN:-"dc=example,dc=com"}
   echo "BASE DN is ${BASE_DN}"
 
   export PASSWORD=${ROOT_PASSWORD:-password}
+  echo "Password set to $PASSWORD"
 
-   echo "Password set to $PASSWORD"
-
-   echo "Running $BOOTSTRAP"
-   sh "${BOOTSTRAP}"
+  echo "Running $BOOTSTRAP"
+  sh "${BOOTSTRAP}"
 
    # Check if OPENDJ_REPLICATION_TYPE var is set. If it is - replicate to that server
    if [ ! -z ${MASTER_SERVER} ] && [ ! -z ${OPENDJ_REPLICATION_TYPE} ];  then
@@ -39,8 +41,8 @@ if [ ! -d ./data/config ] ; then
    fi
 else
  sh ./upgrade -n
- sh ./bin/start-ds --nodetach
- exec ./setup-ldap.sh
+ sh ./bin/start-ds
+ exec ./setup-ldap.sh ${ROOT_USER_DN} ${PASSWORD}
  return
 fi
 
@@ -68,4 +70,4 @@ sh ./upgrade -n
 
 echo "Starting OpenDJ..."
 sh ./bin/start-ds
-exec ./setup-ldap.sh
+exec ./setup-ldap.sh ${ROOT_USER_DN} ${PASSWORD}
