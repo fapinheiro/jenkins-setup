@@ -7,6 +7,8 @@ REM START JENKINS MASTER
 CD %WORKSPACE%\jenkins-master\jenkins
 CALL JenkinsService.bat
 
+TIMEOUT 20
+
 REM START JENINS SLAVE
 CD %WORKSPACE%\jenkins-slave
 CALL JenkinsService.bat
