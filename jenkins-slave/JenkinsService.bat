@@ -2,5 +2,9 @@
 ECHO Starting Jenkins Slave...
 
 SET JENKINS_SLAVE_DIR="C:\Applics\Jenkins\JenkinsSlave"
+SET JENKINS_SLAVE_NAME=win10-local-jnlp-01
+SET JENKINS_MASTER_HOST=127.0.0.1
+SET JENKINS_MASTER_PORT=8080
+SET JENKINS_SECRET=eaf7a69dc3d7f4f1a18688f25d874fad0c6623ee19c4ca71e550a5b006ff68f4
 
-START java -jar agent.jar -jnlpUrl http://localhost:8080/computer/win10-local-jnlp-01/slave-agent.jnlp -secret eaf7a69dc3d7f4f1a18688f25d874fad0c6623ee19c4ca71e550a5b006ff68f4 -workDir %JENKINS_SLAVE_DIR%
+START java -jar agent.jar -jnlpUrl http://%JENKINS_MASTER_HOST%:%JENKINS_MASTER_PORT%/computer/%JENKINS_SLAVE_NAME%/slave-agent.jnlp -secret %JENKINS_SECRET% -workDir %JENKINS_SLAVE_DIR%
