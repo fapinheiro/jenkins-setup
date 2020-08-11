@@ -7,6 +7,8 @@ A Jenkins setup with a master and slave to be able to develop and test Jenkins s
 - Git 2.16.2.windows.1
 - Java OpenJDK 11
 - Docker Desktop for Windows 2.3.0.3
+- Windows 10
+- PowerShell with Invoke-WebRequest 
 
 # Setup Jenkins Locally
 
@@ -15,7 +17,7 @@ A Jenkins setup with a master and slave to be able to develop and test Jenkins s
 - Edit the file `Start.bat`, line 4, set the full path where you have cloned the repository, eg.
 SET WORKSPACE=C:\Users\i052330\WorkspaceNew\sigom-aws\jenkins-setup
 
-- Run the script `.\Start.bat`
+- Run the script `.\Start.bat` in PowerShell
 
 - Jenkins user is `admin` and the password is `admin`
 
