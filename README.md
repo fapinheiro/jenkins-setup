@@ -21,6 +21,8 @@ SET WORKSPACE=C:\Users\i052330\WorkspaceNew\sigom-aws\jenkins-setup
 
 - Jenkins user is `admin` and the password is `admin`
 
+- Set environment variables in your Jenkinsfile `JENKINS_ENV=LOCAL` and `HOST_IP=your_ip_local`
+
 # LDAP Server
 
 - The SIGOM Server will need a LDAP server
